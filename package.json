@@ -1,0 +1,55 @@
+{
+  "name": "tiptap-image-link-example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@tiptap/extension-image": "^2.0.0-beta.209",
+    "@tiptap/extension-link": "^2.0.0-beta.209",
+    "@tiptap/starter-kit": "^2.0.0-beta.209",
+    "@tiptap/vue-2": "^2.0.0-beta.209",
+    "core-js": "^3.8.3",
+    "eslint": "^8.30.0",
+    "prosemirror-commands": "^1.5.0",
+    "prosemirror-dropcursor": "^1.6.1",
+    "prosemirror-gapcursor": "^1.3.1",
+    "prosemirror-history": "^1.3.0",
+    "prosemirror-keymap": "^1.2.0",
+    "prosemirror-schema-list": "^1.2.2",
+    "sass": "^1.57.0",
+    "sass-loader": "^10",
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
