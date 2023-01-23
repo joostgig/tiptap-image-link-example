@@ -61,7 +61,8 @@ export default {
         "https://i.picsum.photos/id/324/200/200.jpg?hmac=qhw4ORwk8T1r-Rxd2QREZORSVvc6l_R1S6F3Pl9mR_c",
       ];
       const randomSource = sources[Math.floor(Math.random() * sources.length)];
-      this.editor.chain().focus().updateAttributes("image", { src: randomSource }).run();
+      const selection = this.editor.view.state.selection;
+      this.editor.chain().focus().insertContentAt({from: selection.from - 1,to: selection.to}, `<a href="/click-me"><img src="${randomSource}"</a>`).run()
     },
   },
 };
